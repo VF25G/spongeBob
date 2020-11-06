@@ -46,6 +46,7 @@
 body {
   background: #DDD324;
   width: 100%;
+  overflow: hidden;
 }
 
 .spongeBob {
@@ -341,4 +342,4 @@ body {
   transform: rotate(-6deg);
 }
 
-/*# sourceMappingURL=src.96ff8062.css.map */
+/*# sourceMappingURL=src.5221fa7c.css.map */
