@@ -1,0 +1,344 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spongeBob .cheek.right:before, .spongeBob .cheek.left:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 80%;
+  top: 9%;
+  background-color: #DDD324;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.spongeBob .mouth:after, .spongeBob .mouth:before {
+  position: absolute;
+  content: "";
+  height: 16%;
+  width: 12%;
+  background: white;
+  top: 100%;
+  border: 2px solid black;
+  border-radius: 4%;
+  z-index: -1;
+}
+
+.spongeBob .chin:after, .spongeBob .chin:before {
+  position: absolute;
+  height: 100%;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #D9241C;
+  border-radius: 100%;
+}
+
+.spongeBob .hole.seventh, .spongeBob .hole.sixth, .spongeBob .hole.fifth, .spongeBob .hole.fourth, .spongeBob .hole.third, .spongeBob .hole.second, .spongeBob .hole.first {
+  position: absolute;
+  border-radius: 50%;
+  background: #8e8f2d;
+  background: linear-gradient(to top right, #8e8f2d 0%, #77741d 70%, #423e00 100%);
+}
+
+body {
+  background: #DDD324;
+  width: 100%;
+}
+
+.spongeBob {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 15% auto;
+}
+.spongeBob .eye {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  top: 18%;
+  background: white;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+.spongeBob .eye.left {
+  left: 17%;
+}
+.spongeBob .eye.right {
+  right: 17%;
+}
+.spongeBob .eye .pupil {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 8%;
+  background: #5AA9BF;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.spongeBob .eye .pupil.left {
+  left: 12%;
+}
+.spongeBob .eye .pupil.right {
+  right: 12%;
+}
+.spongeBob .eye .pupil .iris {
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  top: 8%;
+  background: black;
+  border-radius: 50%;
+}
+.spongeBob .eye .pupil .iris.left {
+  left: 9%;
+}
+.spongeBob .eye .pupil .iris.right {
+  right: 9%;
+}
+.spongeBob .eye .light {
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  background: white;
+  border-radius: 50%;
+  top: 10%;
+  left: 36%;
+  transform: rotate(5deg);
+  animation: eyeLightMove 1.8s infinite;
+}
+.spongeBob .eye .light:before {
+  position: absolute;
+  content: "";
+  height: 55%;
+  width: 50%;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: -56%;
+  transform: rotate(-20deg);
+}
+.spongeBob .eye .light:after {
+  position: absolute;
+  content: "";
+  height: 32%;
+  width: 38%;
+  background: white;
+  border-radius: 50%;
+  top: 106%;
+  left: -4%;
+}
+@keyframes eyeLightMove {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.spongeBob .eyelashes {
+  position: absolute;
+  background: black;
+  border-radius: 3px;
+  height: 5%;
+  width: 1.5%;
+}
+.spongeBob .eyelashes.left.first {
+  top: 18.5%;
+  left: 20%;
+  transform: rotate(-42deg);
+}
+.spongeBob .eyelashes.left.second {
+  top: 13.6%;
+  left: 31%;
+  transform: rotate(-6deg);
+}
+.spongeBob .eyelashes.left.third {
+  top: 15.9%;
+  left: 42%;
+  transform: rotate(25deg);
+}
+.spongeBob .eyelashes.right.first {
+  top: 18.5%;
+  right: 20%;
+  transform: rotate(42deg);
+}
+.spongeBob .eyelashes.right.second {
+  top: 13.6%;
+  right: 31%;
+  transform: rotate(6deg);
+}
+.spongeBob .eyelashes.right.third {
+  top: 15.9%;
+  right: 42%;
+  transform: rotate(-25deg);
+}
+.spongeBob .nose {
+  position: absolute;
+  height: 15%;
+  width: 10%;
+  top: 40%;
+  left: 45%;
+  background: black;
+  border-radius: 60% 60% 80% 80%;
+  z-index: 2;
+}
+.spongeBob .nose:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 80%;
+  background-color: #DDD324;
+  border-radius: 60% 60% 80% 80%;
+  left: 9%;
+  top: 5.5%;
+  z-index: 5;
+}
+.spongeBob .cheek {
+  position: absolute;
+  height: 12%;
+  width: 14%;
+  top: 42%;
+  background: #DDD324;
+  border: 2px solid #D9241C;
+  border-radius: 50%;
+}
+.spongeBob .cheek.left {
+  left: 14%;
+  transform: rotate(6deg);
+}
+.spongeBob .cheek.left:before {
+  left: -9%;
+}
+.spongeBob .cheek.right {
+  right: 14%;
+  transform: rotate(-6deg);
+}
+.spongeBob .cheek.right:before {
+  left: 27%;
+}
+.spongeBob .cheek.left .dimples, .spongeBob .cheek.right .dimples {
+  position: relative;
+  height: 12%;
+  width: 12%;
+  background: #D9241C;
+  border-radius: 50%;
+  top: 30%;
+  left: 25%;
+  z-index: 2;
+}
+.spongeBob .cheek.left .dimples:before, .spongeBob .cheek.right .dimples:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 300%;
+  background: #D9241C;
+  border-radius: 50%;
+}
+.spongeBob .cheek.left .dimples:after, .spongeBob .cheek.right .dimples:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 180%;
+  top: 180%;
+  background: #D9241C;
+  border-radius: 50%;
+}
+.spongeBob .mouth {
+  position: absolute;
+  height: 40%;
+  width: 60%;
+  top: 24%;
+  left: 19.2%;
+  border: 2px solid transparent;
+  border-bottom: 5px solid black;
+  border-radius: 50%;
+}
+.spongeBob .mouth:before {
+  left: 33%;
+}
+.spongeBob .mouth:after {
+  left: 53%;
+}
+.spongeBob .chin {
+  position: absolute;
+  height: 15%;
+  width: 10%;
+  border: 3px solid transparent;
+  border-top: 3px solid #D9241C;
+  border-radius: 100%;
+  top: 76%;
+  left: 45%;
+  transform: rotate(3deg);
+}
+.spongeBob .chin:before {
+  content: "";
+  width: 150%;
+  top: -86%;
+  left: -128%;
+}
+.spongeBob .chin:after {
+  content: "";
+  width: 120%;
+  top: -92%;
+  left: 50%;
+  transform: rotate(-10deg);
+}
+.spongeBob .hole.first {
+  height: 14%;
+  width: 11.6%;
+  top: 5%;
+  left: 6%;
+  transform: rotate(5deg);
+}
+.spongeBob .hole.second {
+  height: 8%;
+  width: 6%;
+  top: 7%;
+  right: 6%;
+  transform: rotate(10deg);
+}
+.spongeBob .hole.third {
+  height: 14%;
+  width: 10%;
+  bottom: 18%;
+  right: 10%;
+  transform: rotate(14deg);
+}
+.spongeBob .hole.fourth {
+  height: 8%;
+  width: 6%;
+  bottom: 7%;
+  right: 16%;
+  transform: rotate(6deg);
+}
+.spongeBob .hole.fifth {
+  height: 14%;
+  width: 10%;
+  bottom: 6%;
+  left: 12%;
+  transform: rotate(6deg);
+}
+.spongeBob .hole.sixth {
+  height: 8%;
+  width: 6%;
+  bottom: 23%;
+  left: 6%;
+  transform: rotate(6deg);
+}
+.spongeBob .hole.seventh {
+  height: 8%;
+  width: 6%;
+  top: 23%;
+  left: 3%;
+  transform: rotate(-6deg);
+}
+
+/*# sourceMappingURL=src.96ff8062.css.map */
